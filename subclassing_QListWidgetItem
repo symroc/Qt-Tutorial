@@ -11,8 +11,8 @@ class lwi : public QListWidgetItem {
   lwi(QListWidget* parent):QListWidgetItem(parent){}
   private:
   bool operator<(const QListWidgetItem &other)const {
-      uint self=strstamp(text());
-      uint comp=strstamp(other.text());
+      uint self=your_customized_function(text());
+      uint comp=your_customized_function(other.text());
      return  self < comp;
   }
 };
